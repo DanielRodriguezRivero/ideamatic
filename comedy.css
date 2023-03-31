@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Monoton';
+    src: url('./Monoton-Regular.ttf');
+}
+
+header{
+    text-align:center;
+}
+#header-img{
+    width:40%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 5%;
+    background-size: 100% auto;
+	margin: 10px; 
+}
+#random-list{
+    display:flex;
+    justify-content:center;
+}
+#random-list div{
+    width:30%;
+    text-align:center;
+	background-color: #f4f4f4; 
+	margin: 60px 5px 100px 5px; 
+	border-radius: 3%;
+	font-size: 20px;
+}
+
+
+
+#random-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: "Segoe UI";
+  margin: 5px;
+}
+
+#random-btn:hover {background-color: #3e8e41}
+
+#random-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#contenedor {
+	background-color: #73C6B6;
+	border-radius: 1%;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+x-sign {
+  --interval: 1s;
+  display: block;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+    --interval: 1s;
+  display: block;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+    color: yellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: darkgreen;
+  font-family: Monoton;
+  font-size: 50px;
+}
+
+
+
+
+@keyframes flicker {
+  50% {
+    color: white;
+    filter: saturate(200%) hue-rotate(20deg);
+  }
+}
